@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<audio controls autoplay loop>
+<source src="spiritedaway.mp3" type="audio/mpeg">
+</audio>
+
+<head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Sharon Isabelle Timotius 鍾銀香</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.header {
+  background-color: #001E30;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+
+.column.side {
+  width: 30%;
+}
+
+
+.column.middle {
+  width: 70%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+a:hover {color: #ff0000;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:#FFFFFF">Sharon Isabelle Timotius 鍾銀香</h1>
+  <body onload=display_time();>
+  <span style="color:#FFFFFF" id="time"></span>
+
+
+<script>
+
+
+function display_rfresh(){
+var refresh=1000; 
+mytime=setTimeout('display_time()',refresh)
+}
+
+function display_time() {
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+var h = today.getHours();
+var m = today.getMinutes();
+var s = today.getSeconds();
+
+if (h<10){h='0'+h}
+if (m<10){m='0'+m}
+if (s<10){s='0'+s}
+today = mm+'-'+dd+'-'+yyyy+'  '+h+':'+m+':'+s;
+document.getElementById("time").innerHTML = today;
+display_rfresh();
+ }
+
+
+</script>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <p><img src="selfphoto.jpg" height="450" width="300" alt="Self Photo" align="left"></p>
+  </div>
+  
+  <div class="column middle">
+    <h2>Introduction</h2>
+    <p>Sharon Isabelle Timotius is currently a sophomore in <a href="https://web.ee.ntu.edu.tw/">National Taiwan Univeristy's Department of Electrical Engineering</a>. She was born on 28th September 2001 in Jakarta, Indonesia. In 2019, She graduated from <a href="https://smakgadingserpong.bpkpenaburjakarta.sch.id/">SMAK PENABUR Gading Serpong</a>, Tangerang, Indonesia.</p>
+    <p>Some of her hobbies are reading, gardening, and listening to good music. Novels are some of her favorite things to read and <a href="https://www.harukimurakami.com/">Haruki Murakami</a> is her favorite author. She is interested in all kinds of plants, but prefers to keep small houseplants because it is easier to manage. She got most of her knowledge about house plants from <a href="https://www.youtube.com/channel/UCWRyi0LgQqAs7_Zz09VZA-Q">a youtuber</a>. Music is a huge part of her life. It helps her calm down when she is too anxious, helps boost motivation when lazy, and helps focus when studying. She mostly listens to music for <a href="https://www.youtube.com/playlist?list=PLS0rbTbC7rd5nfWry3aOg1mVR01m3v3Jp">a youtube playlist</a> she made.</p>
+    
+
+  </div>
+ 
+</div>
+  
+</body>
+</html>
